@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task A</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main>
+    <h1 id="test">ВЕБ-ФОРМА</h1>
+    <form action="form-submit.php" method="get">
+        <!-- your input elements here -->
+
+        <label>Имя:</label>
+        <input type="text" name="first name" autofocus required id="firstnm"/>
+        <br>
+        <label>Фамилия:</label>
+        <input type="text" name="last name" required id="lastnm"/>
+        <br>
+        <label>E-mail:</label>
+        <input type="email" name="email" required id="email"/>
+        <br>
+        <label>Номер телефона:</label>
+        <input type="tel" name="phone number" id="phonenumber" placeholder="формат: +375 29 0123456"/>
+        <br>
+        <label>Адрес:</label>
+        <input type="text" name="address" id="address"/>
+        <br>
+        <label>Почтовый код:</label>
+        <input type="text" name="postal code"  pattern="[0-9]{6}" id="postalcode"/>
+        <br>
+        <label>Пароль:</label>
+        <input type="password" name="password" required id="password"/>
+        <br>
+        <label>Отправить:</label>
+         <input type="submit" value="ОК" id="submitbutton"/>
+    </form>
+
+</main>
+
+</body>
+
+</html>
