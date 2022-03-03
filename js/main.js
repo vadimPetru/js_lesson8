@@ -20,9 +20,9 @@ function checkForm(form) {
       errors.push("Error: Enter last name \n");
   }
 
-    let postalcode_input=/^[0-9]{5}?$/;
+    let postalcode_input=/^[0-9]{6}?$/;
       if (postalcode!=postalcode_input){
-      errors.push("Error: Postcode should be 5 digit numbers \n");
+      errors.push("Error: Postcode should be 6 digit numbers \n");
     }
 
     let email_input=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/;
