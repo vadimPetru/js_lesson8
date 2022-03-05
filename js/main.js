@@ -57,7 +57,7 @@ function checkForm(form) {
         event.preventDefault();
       }
 
-      document.getElementById('submitbutton').addEventListener(
+      document.getElementById('BtnOk').addEventListener(
         'click', cancel, false
       );
       }
