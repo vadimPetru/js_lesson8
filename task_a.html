@@ -26,7 +26,7 @@
         <input type="email" name="email" required id="email"/>
         <br>
         <label>Номер телефона:</label>
-        <input type="tel" name="phone number" id="phonenumber" placeholder="формат: +375 29 0123456"/>
+        <input type="tel" name="phone number" pattern="(\(?(0|\+375)[1-9]{1}\d{1,4}?\)?\s?\d{3,4}\s?\d{3,4})$/;" id="phonenumber" placeholder="формат: +375 29 0123456"/>
         <br>
         <label>Адрес:</label>
         <input type="text" name="address" id="address"/>
