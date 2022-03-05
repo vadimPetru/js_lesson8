@@ -1,12 +1,12 @@
 'use strict';  //We will write strict javascript, helps the engine to be faster.
 
 
-const firstname = document.querySelector("#firstnm");
-const lastname = document.querySelector("#lastnm");
-const phonenumber = document.querySelector("#phonenumber");
-const password = document.querySelector("#password");
-const postalcode = document.querySelector("#postalcode");
-const email = document.querySelector("#email");
+let firstname = document.querySelector("#firstnm");
+let lastname = document.querySelector("#lastnm");
+let phonenumber = document.querySelector("#phonenumber");
+let password = document.querySelector("#password");
+let postalcode = document.querySelector("#postalcode");
+let email = document.querySelector("#email");
 /*const submitbutton = document.querySelector("#submitbutton");*/
 
 function checkForm(form) {
@@ -15,12 +15,12 @@ function checkForm(form) {
    // Check Valid Name
     let errors=[];
  
-if(!firstname.value) {
+     if(firstname.value == '') {
       errors.push("Error: Enter first name \n");
 
-
+     }
 // Check Valid Surname
-      if(!lastname.value) {
+      if(lastname.value == '') {
       errors.push("Error: Enter last name \n");
 
 
@@ -51,7 +51,7 @@ if(!firstname.value) {
 
     }
     // Check Valid Password
-    if(!password.value) {
+    if(password.value== ' ') {
       errors.push("Error: Enter password \n");
 
    }
@@ -60,12 +60,12 @@ if(!firstname.value) {
       let msg="ERRORS:\n";
       for(let i=0; i<errors.length; i++){
         msg+=errors[i];
-        function cancel(event) {
-        event.preventDefault();
+        function StopEv(eve) {
+        eve.preventDefault();
       }
 
       document.getElementById('submitbutton').addEventListener(
-        'click', cancel, false
+        'click', StopEv, false
       );
       }
 
@@ -74,5 +74,5 @@ if(!firstname.value) {
 
   return true;
 
-  }
+     
 }
