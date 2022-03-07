@@ -27,7 +27,7 @@
         <br>
         <label>Номер телефона:</label>
         <input type="tel"  
-         pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)? [0-9]{7}$" maxlength="14"  name="phone number" id="phonenumber"  required placeholder=" +375(XX) XXXXXXX"/>
+         pattern="^+[0-9]{3}+[0-9]{6,14}$"  name="phone number" id="phonenumber"  required placeholder="формат: +375 29 0123456"/>
         <br>
         <label>Адрес:</label>
         <input type="text" name="address" id="address"/>
